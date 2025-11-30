@@ -1,0 +1,96 @@
+* {margin:0; padding:0; box-sizing:border-box; font-family:"Poppins",sans-serif;}
+body {
+  background:linear-gradient(135deg,#001f3f,#003f7f);
+  color:white;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+h2 {color:#00ffcc; margin-bottom:20px;}
+h3 {margin:15px 0; color:#aee7ff;}
+ul {text-align:left; margin-left:20px;}
+
+.box {
+  background:rgba(0,191,255,0.15);
+  border:2px solid #00e1ff;
+  border-radius:15px;
+  padding:20px;
+  width:200px;
+  height:120px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+.box:hover {
+  background:rgba(0,191,255,0.3);
+  transform:scale(1.05);
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:20px;
+  justify-items:center;
+}
+
+.navbar {
+  width:100%;
+  background:rgba(0,0,0,0.4);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 20px;
+  position:fixed;
+  top:0; left:0;
+  z-index:10;
+}
+.navbar h1 {color:#00e1ff; font-size:1.5em;}
+.logout-btn {
+  background:#ff4d4d;
+  border:none;
+  color:white;
+  padding:8px 15px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+.logout-btn:hover {background:#ff0000; transform:scale(1.05);}
+.back-bottom {
+  position:fixed;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#00ffb3;
+  color:#002244;
+  border:none;
+  border-radius:12px;
+  padding:10px 20px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+.back-bottom:hover {
+  background:#00d19a;
+  transform:translateX(-50%) scale(1.05);
+}
+#chatbox {
+  margin-top:40px;
+  padding:20px;
+  background:rgba(255,255,255,0.1);
+  border-radius:12px;
+}
+.call-btn, .chat-btn {
+  background:#00e1ff;
+  color:#002244;
+  border:none;
+  border-radius:8px;
+  padding:8px 15px;
+  margin:5px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+.call-btn:hover, .chat-btn:hover {background:#00bfff;}
